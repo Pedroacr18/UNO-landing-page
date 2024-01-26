@@ -1,0 +1,144 @@
+.Hero {
+  background-color: #17161E;
+}
+
+.hero_wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.hero_imagem {
+  width: 477px;
+  height: 540px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero_imagem::after{
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0px;
+  left: -25px;
+  border-radius: 99px;
+  margin-right: 80px;
+  background: #eb5757cc;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.hero_imagem::before{
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: -50px;
+  border-radius: 99px;
+  margin-right: 80px;
+  background: #2F80ED;
+  filter: blur(70px);
+  z-index: -1;
+}
+
+.hero_title {
+  color: white;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding-bottom: 8px;
+}
+
+.hero_span {
+  font-weight: 700;
+}
+
+.hero_p {
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: "Poppins";
+  padding-bottom: 22px;
+}
+
+.hero_btn {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero_sm {
+  color: white;
+  border: 1px solid white;
+  background-color: red;
+  padding: 9px 35px;
+  font-weight: 600;
+  border-radius: 16px;
+}
+
+.hero_oc {
+  color: white;
+  border: 1px solid white;
+  padding: 9px 35px;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.hero_oc:hover{
+  background-color: white;
+  color: black;
+}
+
+.hero_sm:hover{
+  background-color: white;
+  color: black;
+}
+
+
+@media(max-width:600px) {
+
+
+  .hero_wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .hero_imagem{
+    padding-top: 25px
+  }
+  
+  .hero_imagem::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 135px;
+    right: -50px;
+    border-radius: 99px;
+    margin-right: 80px;
+    background: #2F80ED;
+    filter: blur(70px);
+    z-index: -1;
+  }
+
+  .hero_title{
+    font-size: 28px;
+  }
+  
+  .hero_p{
+    font-size: 16px;
+  }
+
+  .hero_span{
+    font-size: 26px;
+  }
+
+  .hero_btn{
+    gap: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.comprar_wrapper{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap:25px;
+}
+
+.comprar_titulo{
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+}
+
+.comprar_preco{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
